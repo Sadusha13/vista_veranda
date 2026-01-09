@@ -1,0 +1,149 @@
+﻿/* navbar */
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #d9893e;
+    font-size: 24px;
+    transition: 0.3 color;
+}
+
+
+.booknow-button {
+    background-color: #d9893e;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+    .booknow-button:hover {
+        background-color: black;
+    }
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+    .navbar-toggler:focus, .btn-close:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-lnink:hover, .nav-lnink.active {
+    color: black;
+}
+
+@media (min-width:991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #d9893e;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+h5 {
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+}
+
+h1 {
+    font-family: Rockwell Condensed;
+    font-size: 75px;
+    color: #efa968;
+    margin-left: 100px;
+}
+
+    h1 span {
+        font-family: Rockwell Condensed;
+        color: rgba(0,0,0,0.7);
+    }
+
+p {
+    font-family: "Rubik", sans-serif, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 100px;
+    margin-bottom: 75px;
+}
+
+/* card */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -50px;
+}
+
+.card {
+    width: 325px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 35px;
+    transition: transform 0.9s ease;
+}
+
+    .card:hover {
+        transform: translateY(-30px);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+.card-content {
+    padding: 16px;
+}
+
+.card h3 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #565353;
+    margin: 0 0 16px;
+}
+
+.card-content .btn {
+    display: inline-block;
+    background-color: #d9893e;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: black;
+}

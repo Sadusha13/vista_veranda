@@ -1,0 +1,212 @@
+<head>
+  <title>Blog Page</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\smm\Downloads\Screenshot__20_-removebg-preview.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4; 
+    }
+
+    header {
+      background-color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #eac29d; 
+    }
+
+    header h1 {
+      margin: 0;
+      color: #333; 
+      font-size: 2.5em;
+    }
+
+    header p {
+      color: #666; 
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .featured-post, .recent-posts, .blog-categories, .subscribe-form, .comments-section {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 900px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .featured-post img, .recent-posts img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .featured-post h2 {
+      color: #333;
+      margin: 15px 0;
+      font-size: 2em;
+    }
+
+    .featured-post .read-more {
+      background-color: #eac29d;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .featured-post .read-more:hover {
+      background-color: #d4a78e; 
+    }
+
+    .blog-categories h2, .recent-posts h2, .subscribe-form h2, .comments-section h2 {
+      color: #333;
+      margin-top: 0;
+      font-size: 1.8em;
+      border-bottom: 2px solid #eac29d;
+      padding-bottom: 10px;
+    }
+
+    .blog-categories ul, .recent-posts ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .blog-categories li, .recent-posts li {
+      margin-bottom: 15px;
+    }
+
+    .blog-categories a, .recent-posts h3 a {
+      color: #333;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    .blog-categories a:hover, .recent-posts h3 a:hover {
+      color: #eac29d; 
+    }
+
+    .recent-posts img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .recent-posts h3 {
+      margin: 10px 0 5px;
+      color: #333;
+      font-size: 1.5em;
+    }
+
+    .subscribe-form form, .comments-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .subscribe-form input[type="email"], .comments-section textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1em;
+      transition: border-color 0.3s ease;
+    }
+
+    .subscribe-form input[type="email"]:focus, .comments-section textarea:focus {
+      border-color: #eac29d; 
+      outline: none;
+    }
+
+    .subscribe-form button, .comments-section button {
+      background-color: #eac29d; 
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .subscribe-form button:hover, .comments-section button:hover {
+      background-color: #d4a78e; 
+    }
+  </style>
+  <script>
+    function showPopup(message) {
+            alert(message);
+        }
+
+</script>
+</head>
+<body>
+  <header>
+    <h1>Vista Veranda Blogs</h1>
+    <p>Stay up-to-date with the latest news, tips, and inspiration from our beachside paradise</p>
+  </header>
+  
+  <section class="featured-post">
+    <img src="D:\KDU\hotel project\lokka\asts4vv\Blog1st.jpg"alt="Featured Post Image">
+    <h2>Discover the Best Beaches in the Area</h2>
+    <p>Read our latest blog post to find out the top beaches to visit during your stay with us.</p>
+    <a href="https://www.thetimes.com/travel/destinations/asia-travel/sri-lanka/best-beaches-in-sri-lanka-2t5c2nrmf" class="read-more">Read More</a>
+  </section>
+  
+  <section class="blog-categories">
+    <h2>Blog Categories</h2>
+    <ul>
+      <li><a href="https://www.expedia.co.in/5Star-South-Sri-Lanka-Coast-Hotels.s50-0-d6055128.Travel-Guide-Filter-Hotels">Hotel News</a></li>
+      <li><a href="https://www.nomadicmatt.com/travel-blogs/sri-lanka-trip-planning-guide/">Local Tips</a></li>
+      <li><a href="https://www.pledgeholidays.com/sri-lanka-travel-inspiration">Travel Inspiration</a></li>
+    </ul>
+  </section>
+  
+  <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      <li>
+        <img src="D:\KDU\hotel project\lokka\asts4vv\blog1.jpg"alt="Post Image 1">
+        <h3>Summer Vibes at the Beach</h3>
+        <p>Get ready for a summer of fun in the sun with our top tips for making the most of your beach vacation.</p>
+      </li>
+      <li>
+        <img src="D:\KDU\hotel project\lokka\asts4vv\blog2.jpg" alt="Post Image 2">
+        <h3>Beachside Dining at Its Best</h3>
+        <p>Discover the best restaurants and bars at our beachside hotel, and get ready to indulge in some delicious seafood.</p>
+      </li>
+      <li>
+        <img src="D:\KDU\hotel project\lokka\asts4vv\BLOG3.jpg"alt="Post Image 3">
+        <h3>Wellness at the Beach</h3>
+        <p>Find out how to stay healthy and relaxed during your beach vacation with our top wellness tips.</p>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="subscribe-form">
+    <h2>Stay Up-to-Date with Our Latest Blog Posts</h2>
+    <form>
+      <input type="email" placeholder="Enter your email address">
+      <button onclick="showPopup('Hello! Thank You for Subscribe Us')">Subscribe</button>
+    </form>
+  </section>
+  
+  <section class="comments-section">
+    <h2>Leave a Comment</h2>
+    <form>
+      <textarea placeholder="Write your comment here..."></textarea>
+      <button onclick="showPopup('Hello! Thank You for Comment Us')">Post Comment</button>
+    </form>
+  </section>
+</body>
+</html>

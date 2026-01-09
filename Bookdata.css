@@ -1,0 +1,91 @@
+/* Global Styles */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #ffffff;
+    background-image: url('assets/in7.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+/* Content Wrapper */
+.wrapper {
+    max-width: 100px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+select {
+    width: 80%;
+    padding: 10px;
+    margin-top: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+input[type="submit"] {
+    width: 40%;
+    padding: 10px;
+    background-color: #f7b65ac8; /* Bootstrap primary color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #d9893e; /* Darker shade on hover */
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    margin-left: 50px;
+    
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}

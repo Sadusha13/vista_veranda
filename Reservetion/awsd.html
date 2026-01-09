@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Payment Portal</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.form-control {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		.form-control:focus {
+			border-color: #aaa;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Online Payment Portal</h2>
+		<form>
+			<label for="card-number">Card Number:</label>
+			<input type="text" id="card-number" class="form-control" />
+			<label for="expiration-date">Expiration Date:</label>
+			<input type="text" id="expiration-date" class="form-control" />
+			<label for="security-code">Security Code:</label>
+			<input type="text" id="security-code" class="form-control" />
+			<button class="button">Make Payment</button>
+		</form>
+	</div>
+</body>
+</html>

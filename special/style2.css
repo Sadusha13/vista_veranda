@@ -1,0 +1,124 @@
+﻿/* navbar */
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #d9893e;
+    font-size: 24px;
+    transition: 0.3 color;
+}
+
+
+.booknow-button {
+    background-color: #d9893e;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+    .booknow-button:hover {
+        background-color: black;
+    }
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+    .navbar-toggler:focus, .btn-close:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-lnink:hover, .nav-lnink.active {
+    color: black;
+}
+
+@media (min-width:991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #d9893e;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+h1 {
+    padding: 40px;
+    font-family: Rockwell Condensed;
+    font-size: 75px;
+    color: black;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.carousel-item img {
+    margin-bottom: 100px;
+    align-self: center;
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Custom styles for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+    /* Hide default icons */
+}
+
+.carousel-control-prev::after,
+.carousel-control-next::after {
+    font-size: 2rem;
+    /* Adjust icon size */
+    color: black;
+    /* Change icon color */
+    line-height: 1;
+    /* Center icon vertically */
+}
+
+.carousel-control-prev::after {
+    content: "\f104";
+    /* Font Awesome left arrow */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.carousel-control-next::after {
+    content: "\f105";
+    /* Font Awesome right arrow */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
