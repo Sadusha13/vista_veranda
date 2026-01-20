@@ -10,27 +10,51 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+  <style>
+    .footer .horizontal-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    .footer .horizontal-list li {
+      text-align: center;
+      margin: 10px;
+    }
+    .footer .horizontal-list li img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      filter: brightness(0) invert(1);
+    }
+    .footer .horizontal-list li p {
+      margin: 5px 0;
+      color: white;
+    }
+  </style>
 </head>
 <body><br>
   <header class="header">
       <nav>
         <div class="nav__bar">
           <div class="logo">
-            <a href="#"><img src="assets/Blogo.png" alt="logo" /></a>
+            <a href="#"><img src="assets/1.png" alt="logo" /></a>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
           </div>
         </div>
        <ul class="nav__links" id="nav-links">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="D:\KDU\hotel project\vista veranda\Dining\index.html">Dining</a></li>
-        <li><a href="D:\KDU\hotel project\vista veranda\special\index.html">Special Offers</a></li>
-        <li><a href="D:\KDU\hotel project\vista veranda\Facilities\newone.html">Facilities</a></li>
-        <li><a href="D:\KDU\hotel project\vista veranda\contactus.html">Contact</a></li>
+        <li><a href="Dining/index.html">Dining</a></li>
+        <li><a href="special/index.html">Special Offers</a></li>
+        <li><a href="Facilities/newone.html">Facilities</a></li>
+        <li><a href="contactus.html">Contact</a></li>
       </ul>
-		<a href="reservationa.html">
+		<a href="Bookdata.html">
         <button class="btn nav__btn">Book Now</button></a>
       </nav>
       </header>
@@ -95,7 +119,7 @@
                   <p class="section__description">
                     Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making every moment of your getaway truly extraordinary.
                   </p>
-                  <a href="reservationa.html">
+                <a href="Bookdata.html">
                     <button class="btn nav__btn">Book Now</button>
                   </a>
                 </div>
@@ -116,9 +140,9 @@
                   </form>
                   <h4>PAYMENT METHODS</h4>
                   <div class="payment-methods">
-                    <img src="assets/cc-visa-brands-solid (1).svg" alt="Visa">
-                    <img src="assets/cc-mastercard-brands-solid (1).svg" alt="MasterCard">
-                    <img src="assets/paypal-brands-solid (1).svg" alt="PayPal">
+                    <i class="ri-visa-line" style="font-size: 40px;"></i>
+                    <i class="ri-mastercard-line" style="font-size: 40px;"></i>
+                    <i class="ri-paypal-line" style="font-size: 40px;"></i>
                   </div>
                 </div>
                 <div class="footer__col">

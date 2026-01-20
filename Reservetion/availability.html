@@ -4,6 +4,21 @@
     <title>Room Availability</title>
     <link rel="stylesheet" href="style.css">
     <style>
+       .home-link-btn {
+         position: fixed;
+         top: 20px;
+         right: 20px;
+         background-color: #007BFF;
+         color: white;
+         padding: 10px 20px;
+         text-decoration: none;
+         border-radius: 5px;
+         z-index: 1000;
+         font-weight: bold;
+       }
+       .home-link-btn:hover {
+         background-color: #0056b3;
+       }
        body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -112,5 +127,6 @@ button:hover {
     </div>
     <br>
     <center><button onclick="window.location.href='ReservationForm.html'">Book Now</button></center>
+    <a href="../index.html" class="home-link-btn">← Back to Home</a>
 </body>
 </html>
