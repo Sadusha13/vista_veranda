@@ -66,7 +66,7 @@
 
 img {
   width: 100%;
-  display: flex;
+  display: block;
 }
 
 a {
@@ -84,6 +84,7 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .header {
@@ -91,7 +92,6 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 
@@ -100,10 +100,11 @@ nav {
   isolation: isolate;
   top: 0;
   height: 80px;
-    margin: 20px;
+  left: 1rem;
+  right: 1rem;
   background-color: #fff;
-  max-width: var(--max-width);
-  margin: auto;
+  max-width: none;
+  margin: 1rem auto 0;
   z-index: 9;
   border-radius: 16px;
   padding: 0.5rem;
@@ -675,13 +676,13 @@ nav {
   }
 }
 .container{
-  position:absolute;
-  top:0;
-  left:0;
+  position:fixed;
+  inset:0;
   width:100%;
   height:100vh;
   overflow: hidden;
   box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index:0;
 }
 .wrapper{
   width:100%;
@@ -689,12 +690,12 @@ nav {
   display:flex;
   animation: slide 10s infinite;
 }
-.container .wrapper img {
+.wrapper img{
+  flex: 0 0 100%;
   width: 100%;
   height: 100%;
-  flex: 0 0 100%;
   object-fit: cover;
-  display: block;
+  object-position: center;
 }
 @keyframes slide {
   0%{
